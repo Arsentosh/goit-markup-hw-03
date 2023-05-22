@@ -82,6 +82,9 @@ span {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  padding: 0 15px 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*-3-3-3-3-3-3-3-3-3- HEADER */
@@ -110,7 +113,7 @@ span {
   flex-direction: row;
   align-items: center;
   gap: 40px;
-  padding: 24px, 24px;
+  padding: 24px, 0;
 }
 
 .nav-item-link {
@@ -219,21 +222,28 @@ span {
 
 /* !_!_____OUR FEATURES */
 
-.features-title {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features-list {
   display: flex;
   flex-direction: row;
+  gap: 24px;
 }
-
-/* .features-list-item.first {
-  width: calc((100% - 72px) / 4);
-} */
 
 .features-list-item {
   gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
 
 .feature-name {
@@ -263,10 +273,8 @@ span {
 .eg-list {
   display: flex;
   flex-direction: row;
-}
-
-.eg-item {
   gap: 24px;
+  width: calc((100% - 48px) / 3);
 }
 
 .eg-title {
@@ -297,10 +305,11 @@ span {
 .our-team-list {
   display: flex;
   flex-direction: row;
+  gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
 
 .our-team-item {
-  gap: 24px;
   background-color: #ffffff;
 }
 
@@ -361,7 +370,6 @@ span {
 
 .logo-footer {
   margin-bottom: 16px;
-  display: inline-block;
 }
 
 .fter {
