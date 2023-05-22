@@ -79,17 +79,20 @@ span {
 
 .container {
   width: 1158px;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
 /*-3-3-3-3-3-3-3-3-3- HEADER */
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   align-items: center;
   padding: 24px;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
@@ -147,6 +150,7 @@ span {
   /* identical to box height, or 150% */
   letter-spacing: 0.02em;
   color: var(--slate-color);
+  padding: 24px 0;
 }
 
 .address-link:hover {
@@ -163,6 +167,10 @@ span {
   background-color: var(--navi-blue-color);
 }
 
+.hero-container {
+  padding: 188px 0;
+}
+
 .hero-title {
   background-color: var(--navi-blue-color);
   font-style: normal;
@@ -176,6 +184,7 @@ span {
   display: flex;
   justify-content: center;
   text-align: center;
+  max-width: 496px;
 }
 
 .hero-btn {
@@ -193,7 +202,10 @@ span {
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: var(--iris-color);
+  border: none;
+  display: block;
+  min-width: 169px;
+  height: 56px;
 }
 
 .hero-btn:hover {
@@ -206,13 +218,21 @@ span {
 
 /* !_!_____OUR FEATURES */
 
+.features-title {
+  visibility: hidden;
+}
+
 .features-list {
   display: flex;
   flex-direction: row;
 }
 
+.features-list-item.first {
+  width: calc((100% - 72px) / 4);
+}
+
 .features-list-item {
-  margin-left: 24px;
+  gap: 24px;
 }
 
 .feature-name {
@@ -245,7 +265,7 @@ span {
 }
 
 .eg-item {
-  margin-left: 24px;
+  gap: 24px;
 }
 
 .eg-title {
@@ -262,6 +282,14 @@ span {
 /* -3-3-3-3-3-3-3-3-3-OUR TAEM */
 
 .our-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11em;
+  /* identical to box height, or 111% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navi-blue-color);
+  text-align: center;
   margin-bottom: 72px;
 }
 
@@ -271,26 +299,12 @@ span {
 }
 
 .our-team-item {
-  margin-left: 24px;
+  gap: 24px;
+  background-color: #ffffff;
 }
 
 .our-team {
   background-color: #f4f4fd;
-}
-
-.our-team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11em;
-  /* identical to box height, or 111% */
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--navi-blue-color);
-  text-align: center;
-}
-
-.our-team-item {
-  background-color: #ffffff;
 }
 
 .our-team-name {
@@ -322,6 +336,7 @@ span {
 
 .footer {
   background: var(--navi-blue-color);
+  padding: 100px 0;
 }
 
 .footer-container {
@@ -345,6 +360,7 @@ span {
 
 .logo-footer {
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .fter {
