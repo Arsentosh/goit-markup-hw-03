@@ -270,7 +270,6 @@ span {
 
 .eg-list {
   display: flex;
-  flex-direction: row;
   gap: 24px;
   width: calc((100% - 48px) / 3);
 }
@@ -304,11 +303,12 @@ span {
   display: flex;
   flex-direction: row;
   gap: 24px;
-  width: calc((100% - 72px) / 4);
 }
 
 .our-team-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team {
@@ -347,13 +347,6 @@ span {
   padding: 100px 0;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  width: 264px;
-  margin-left: 156px;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -368,23 +361,28 @@ span {
 
 .logo-footer {
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .fter {
   color: #f4f4fd;
+  display: inline-block;
+  margin: 0;
 }
 
 .footer-title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 15px;
+  line-height: 1.5;
   /* or 150% */
   letter-spacing: 0.02em;
   color: var(--cloud-color);
+  max-width: 264px;
 }
 
 /* _$_$_$_$_$_$_$_$_$_$_ADDITIONAL INFO FOR PORTFOLIO */
+
+.sec-images {
+  padding: 96px 0 120px 0;
+}
 
 .btn {
   font-family: "Roboto", sans-serif;
@@ -403,40 +401,43 @@ span {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: none;
+  border: 1px solid #e7e9fc;
 }
 
 .btn:hover {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 
 .btn:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 
 .btns-list {
   display: flex;
-  flex-direction: row;
-  text-align: center;
   gap: 24px;
   justify-content: center;
-  margin-top: 96px;
-  margin-bottom: 76px;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.btn-item {
 }
 
 .name-image {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2em;
+  line-height: 1.2;
   /* identical to box height, or 120% */
   letter-spacing: 0.02em;
   color: var(--navi-blue-color);
 }
 
 .image-description {
-  font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.5;
   /* identical to box height, or 150% */
   letter-spacing: 0.02em;
   color: var(--slate-color);
@@ -444,11 +445,16 @@ span {
 
 .images-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .image-item {
-  margin-left: 24px;
-  margin-bottom: 48px;
+  width: calc((100% - 48px) / 3);
+  border: 1px solid #e7e9fc;
+}
+
+.name-image {
+  margin-bottom: 8px;
 }
