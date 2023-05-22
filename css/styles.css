@@ -87,14 +87,13 @@ span {
 
 /*-3-3-3-3-3-3-3-3-3- HEADER */
 
-.header {
-  border-bottom: 1px solid #e7e9fc;
-}
-
 .header-container {
   display: flex;
   align-items: center;
-  padding: 24px;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
@@ -108,21 +107,22 @@ span {
 
 .nav-list {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 40px;
-  padding: 24px, 0;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .nav-item-link {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%; /* 24/16 */
   /* identical to box height, or 150% */
   letter-spacing: 0.02em;
   color: var(--navi-blue-color);
+  display: flex;
+  padding: 24px 0;
 }
 
 .nav-item-link:hover {
