@@ -32,6 +32,8 @@ ol {
 
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -83,6 +85,7 @@ span {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
 
 /*-3-3-3-3-3-3-3-3-3- HEADER */
@@ -271,6 +274,9 @@ span {
 .eg-list {
   display: flex;
   gap: 24px;
+}
+
+.eg-item {
   width: calc((100% - 48px) / 3);
 }
 
@@ -427,6 +433,13 @@ span {
 /* .btn-item {
 } */
 
+.name-description {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
+
 .name-image {
   font-weight: 500;
   font-size: 20px;
@@ -451,8 +464,8 @@ span {
 }
 
 .image-item {
-  width: calc((100% - 48px) / 3);
   border: 1px solid #e7e9fc;
+  width: calc((100% - 48px) / 3);
 }
 
 .name-image {
