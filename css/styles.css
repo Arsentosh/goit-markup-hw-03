@@ -10,8 +10,6 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: var(--slate-color);
-  box-sizing: content-box;
-  margin: 8px;
 }
 
 p,
@@ -85,7 +83,6 @@ span {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 /*-3-3-3-3-3-3-3-3-3- HEADER */
@@ -394,9 +391,8 @@ span {
   font-family: "Roboto", sans-serif;
   background-color: var(--cloud-color);
   font-weight: 500;
-  font-style: normal;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.5;
   /* identical to box height, or 150% */
   color: #ffffff;
   letter-spacing: 0.04em;
@@ -408,6 +404,10 @@ span {
   border-radius: 4px;
   border: none;
   border: 1px solid #e7e9fc;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .btn:hover {
@@ -424,18 +424,27 @@ span {
 
 .btns-list {
   display: flex;
-  gap: 24px;
   justify-content: center;
   align-items: center;
+  gap: 24px;
   margin-bottom: 72px;
 }
 
 /* .btn-item {
 } */
 
-.name-description {
+.images-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.image-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.name-description {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
@@ -448,6 +457,7 @@ span {
   /* identical to box height, or 120% */
   letter-spacing: 0.02em;
   color: var(--navi-blue-color);
+  margin-bottom: 8px;
 }
 
 .image-description {
@@ -455,20 +465,4 @@ span {
   /* identical to box height, or 150% */
   letter-spacing: 0.02em;
   color: var(--slate-color);
-}
-
-.images-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
-
-.image-item {
-  border: 1px solid #e7e9fc;
-  width: calc((100% - 48px) / 3);
-}
-
-.name-image {
-  margin-bottom: 8px;
 }
