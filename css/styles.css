@@ -265,7 +265,7 @@ span {
 /*-3-3-3-3-3-3-3-3- WHAT ARE WE DOING */
 
 .section-eg {
-  margin: 0;
+  padding-bottom: 120px;
 }
 
 .eg-title {
